@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/nolili/libcurl-ios.git", :commit => "7342d38a2388235ff1e55e0d8c08f9d1fe38c62e" }
+  s.source       = { :git => "https://github.com/nolili/libcurl-ios.git", :branch => "master" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.public_header_files  = "include/**/*.h"
+  #s.public_header_files  = "include/**/curl/*.h"
 
   # s.public_header_files = "Classes/**/*.h"
   s.vendored_libraries = "lib/libcurl.a"
